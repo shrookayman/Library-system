@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D94971D-ADA1-4EB4-8622-72510B360681}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>newlibrary1</RootNamespace>
+    <AssemblyName>newlibrary1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy.Designer.cs">
+      <DependentUpon>buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeForAdmin.Designer.cs">
+      <DependentUpon>homeForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ideas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ideas.Designer.cs">
+      <DependentUpon>ideas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libraryprojectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryprojectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="offers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="offers.Designer.cs">
+      <DependentUpon>offers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="req.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="req.Designer.cs">
+      <DependentUpon>req.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show.Designer.cs">
+      <DependentUpon>show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upload.Designer.cs">
+      <DependentUpon>upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view.Designer.cs">
+      <DependentUpon>view.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="buy.resx">
+      <DependentUpon>buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeForAdmin.resx">
+      <DependentUpon>homeForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ideas.resx">
+      <DependentUpon>ideas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offers.resx">
+      <DependentUpon>offers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="req.resx">
+      <DependentUpon>req.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show.resx">
+      <DependentUpon>show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upload.resx">
+      <DependentUpon>upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view.resx">
+      <DependentUpon>view.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="libraryprojectDataSet.xsc">
+      <DependentUpon>libraryprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="libraryprojectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryprojectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryprojectDataSet.xss">
+      <DependentUpon>libraryprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondos11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books, coffee, tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookshelf Study Library Books Photography Background Back to School backdrop Decor Photo Studio Props,Retro Vinyl Bookshelf Printed backdrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 8.33.06 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM6.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM7.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM8.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-29 at 11.37.04 PM9.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\See Inside 7 Beautiful Monastic Libraries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\See Inside 7 Beautiful Monastic Libraries1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\See Inside 7 Beautiful Monastic Libraries2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
